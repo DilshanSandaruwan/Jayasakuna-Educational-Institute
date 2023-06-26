@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="702.0" prefWidth="1365.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Jayasakuna.controller.OTPFormController">
+   <children>
+      <ImageView fitHeight="702.0" fitWidth="1365.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imge/OTP.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="149.0" layoutX="150.0" layoutY="502.0" stroke="BLACK" strokeType="INSIDE" width="149.0" />
+      <ImageView fitHeight="149.0" fitWidth="149.0" layoutX="147.0" layoutY="500.0">
+         <image>
+            <Image url="@../imge/happy.gif" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtOtp" layoutX="282.0" layoutY="335.0" prefHeight="39.0" prefWidth="299.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" />
+      <JFXButton fx:id="btnConform" layoutX="357.0" layoutY="534.0" onAction="#btnOnAction" prefHeight="45.0" prefWidth="159.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: white;" text="Confrom">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblError" alignment="CENTER" layoutX="145.0" layoutY="402.0" prefHeight="16.0" prefWidth="424.0" textFill="#d70c0c" />
+   </children>
+</AnchorPane>

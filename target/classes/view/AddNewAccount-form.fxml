@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddAccountPane" prefHeight="702.0" prefWidth="962.0" style="-fx-background-color: #caf0f8;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Jayasakuna.controller.AddNewAccountFormController">
+   <children>
+      <ImageView fitHeight="702.0" fitWidth="962.0" layoutX="1.0" layoutY="-3.0" opacity="0.93" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imge/AddnewUser.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="301.0" layoutY="41.0" prefHeight="77.0" prefWidth="370.0" text="Add New User">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="271.0" layoutY="197.0" prefHeight="45.0" prefWidth="601.0" />
+      <Label layoutX="44.0" layoutY="202.0" prefHeight="34.0" prefWidth="161.0" text="User Name" textFill="#111111">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="292.0" prefHeight="34.0" prefWidth="161.0" text="Password" textFill="#030303">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtpassword" layoutX="271.0" layoutY="287.0" prefHeight="45.0" prefWidth="601.0" />
+      <TextField fx:id="txtRetypePassword" layoutX="271.0" layoutY="377.0" prefHeight="45.0" prefWidth="601.0" />
+      <Label layoutX="39.0" layoutY="383.0" prefHeight="34.0" prefWidth="232.0" text="Re-type Password">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="430.0" layoutY="494.0" onAction="#SaveOnPress" onMouseEntered="#SaveOnMouseEntered" onMouseExited="#SaveOnMouseExi" prefHeight="92.0" prefWidth="210.0" style="-fx-background-color: #fefae0; -fx-border-radius: 10; -fx-background-radius: 10;" text="Save">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </JFXButton>
+      <Line endX="153.33331298828125" layoutX="436.0" layoutY="118.0" startX="-86.66665649414062" />
+      <ImageView fitHeight="69.0" fitWidth="84.0" layoutX="138.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imge/name.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

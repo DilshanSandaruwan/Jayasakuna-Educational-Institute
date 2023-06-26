@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="702.0" prefWidth="962.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Jayasakuna.controller.PaymentFormController">
+   <children>
+      <ImageView fitHeight="702.0" fitWidth="962.0" layoutX="9.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imge/paymentDTO.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtPaymentID" layoutX="490.0" layoutY="182.0" onKeyPressed="#PressId" prefHeight="41.0" prefWidth="237.0" style="-fx-background-radius: 40; -fx-border-radius: 40;" />
+      <TextField fx:id="txtFees" layoutX="490.0" layoutY="322.0" prefHeight="41.0" prefWidth="237.0" style="-fx-background-radius: 40; -fx-border-radius: 40;" />
+      <Label layoutX="147.0" layoutY="143.0" prefHeight="31.0" prefWidth="142.0" text="Student ID" textFill="#111010">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="547.0" layoutY="143.0" prefHeight="37.0" prefWidth="149.0" text="Payment ID" textFill="#030303">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="547.0" layoutY="283.0" prefHeight="25.0" prefWidth="125.0" text="Fees Rs/" textFill="#1b1a1a">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="283.0" prefHeight="25.0" prefWidth="125.0" text="Date" textFill="#070707">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="516.0" layoutY="404.0" onAction="#PressClear" prefHeight="35.0" prefWidth="73.0" style="-fx-background-color: #48CAE4; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: black;" text="Clear" textFill="WHITE" />
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="606.0" layoutY="403.0" onAction="#PressDelete" prefHeight="37.0" prefWidth="76.0" style="-fx-background-color: #0077B6; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: black;" text="Delete" textFill="WHITE" />
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="696.0" layoutY="403.0" onAction="#PressUpdate" prefHeight="37.0" prefWidth="76.0" style="-fx-background-color: #48CAE4; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: black;" text="Update" textFill="WHITE" />
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="786.0" layoutY="403.0" onAction="#PressSave" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #0077B6; -fx-border-color: black; -fx-border-radius: 5; -fx-border-radius: 5;" text="Save" textFill="WHITE" />
+      <TableView fx:id="tblPayment" layoutX="119.0" layoutY="462.0" prefHeight="200.0" prefWidth="757.0">
+        <columns>
+          <TableColumn fx:id="colsId" prefWidth="173.6666717529297" text="Student ID" />
+          <TableColumn fx:id="colpId" prefWidth="182.3333282470703" text="Payment ID" />
+            <TableColumn fx:id="coldate" prefWidth="198.66665649414062" text="Date" />
+            <TableColumn fx:id="colfees" prefWidth="201.99996948242188" text="Fees Rs /" />
+        </columns>
+      </TableView>
+      <Label layoutX="252.0" layoutY="30.0" prefHeight="41.0" prefWidth="342.0" text="Payment Management">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comStudentId" layoutX="143.0" layoutY="180.0" onAction="#PressId" prefHeight="35.0" prefWidth="164.0" />
+      <DatePicker fx:id="txtDate" layoutX="121.0" layoutY="333.0" prefHeight="31.0" prefWidth="205.0" />
+   </children>
+</AnchorPane>

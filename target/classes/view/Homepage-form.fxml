@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="homepane" prefHeight="702.0" prefWidth="1365.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Jayasakuna.controller.HomepageFormController">
+   <children>
+      <Pane fx:id="Varpane" prefHeight="702.0" prefWidth="404.0">
+         <children>
+            <ImageView fitHeight="702.0" fitWidth="409.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imge/home.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnHome" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="141.0" layoutY="9.0" onAction="#Homepress" prefHeight="55.0" prefWidth="109.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #0077B6;" text="Home">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="41.0" onMouseEntered="#btnHomeOnMouseEntered" onMouseExited="#btnHomeOnMouseExite" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imge/Home btn.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnStudent" buttonType="RAISED" layoutX="95.0" layoutY="136.0" onAction="#Studentpress" onMouseEntered="#btnStudentOnMouseEntered" onMouseExited="#btnStudentOnMouseExited" prefHeight="49.0" prefWidth="201.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #8338ec;" text="Student" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnTeacher" buttonType="RAISED" layoutX="91.0" layoutY="201.0" onAction="#Teacherpress" onMouseEntered="#btnTeacherOnMouseEntered" onMouseExited="#btnTeacherOnMouseExited" prefHeight="49.0" prefWidth="201.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #8338ec;" text="Teacher" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnEmployee" buttonType="RAISED" layoutX="93.0" layoutY="272.0" onAction="#Emplolyeepress" onMouseEntered="#btnEmployeeOnMouseEntered" onMouseExited="#btnEmployeeOnMouseExited" prefHeight="49.0" prefWidth="201.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #8338ec;" text="Employee" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnSubject" buttonType="RAISED" layoutX="97.0" layoutY="336.0" onAction="#Subjectpress" onMouseEntered="#btnSubjectOnMouseEntered" onMouseExited="#btnSubjectOnMouseExite" prefHeight="49.0" prefWidth="201.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #8338ec;" text="Subject" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnAttendance" buttonType="RAISED" layoutX="93.0" layoutY="475.0" onAction="#Attendancepress" onMouseEntered="#btnaAttendanceOnMouseEntered" onMouseExited="#btnAttendanceOnMouseExite" prefHeight="49.0" prefWidth="201.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #8338ec;" text="Attendance" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnSalary" buttonType="RAISED" layoutX="93.0" layoutY="537.0" onAction="#Salarypress" onMouseEntered="#btnStudiesOnMouseEntered" onMouseExited="#btnStudiesOnMouseExite" prefHeight="49.0" prefWidth="201.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #8338ec;" text="Studies" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnLogout" buttonType="RAISED" layoutX="116.0" layoutY="596.0" onAction="#Logoutpress" onMouseEntered="#btnLogoutOnMouseEntered" onMouseExited="#btnLogoutOnMouseExite" prefHeight="49.0" prefWidth="153.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #48CAE4;" text="Log out">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imge/logoutbtn.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnPayment" buttonType="RAISED" layoutX="93.0" layoutY="404.0" onAction="#Paymentpress" onMouseEntered="#btnPaymentOnMouseEntered" onMouseExited="#btnPaymentOnMouseExite" prefHeight="49.0" prefWidth="201.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #8338ec;" text="Payment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <Button fx:id="btnAddAccount" layoutX="322.0" layoutY="22.0" mnemonicParsing="false" onAction="#AddAccountOnPress" opacity="0.88" prefHeight="45.0" prefWidth="64.0" style="-fx-background-radius: 20;">
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imge/name.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <JFXButton fx:id="btnPrivacy" buttonType="RAISED" layoutX="113.0" layoutY="83.0" onAction="#PrivacyPress" onMouseEntered="#btnStudentOnMouseEntered" onMouseExited="#btnStudentOnMouseExited" prefHeight="39.0" prefWidth="163.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #480ca8;" text="Privacy" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="122.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imge/privacy.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <AnchorPane fx:id="mainPane" layoutX="404.0" prefHeight="702.0" prefWidth="960.0">
+         <children>
+            <ImageView fitHeight="702.0" fitWidth="960.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imge/home2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="702.0" prefWidth="1365.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Jayasakuna.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="702.0" fitWidth="1365.0" layoutY="1.0">
+         <image>
+            <Image url="@../imge/login (1).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUsername" alignment="CENTER" layoutX="224.0" layoutY="267.0" onKeyPressed="#txtUsernameOnKeyPressed" prefHeight="53.0" prefWidth="331.0" promptText="Enter user name " style="-fx-background-radius: 50; -fx-border-radius: 50;">
+         <font>
+            <Font name="Noto Sans Mono Regular" size="20.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="btnLogin" layoutX="303.0" layoutY="504.0" onAction="#btnLoginOnAction" prefHeight="47.0" prefWidth="165.0" style="-fx-background-color: #03045E; -fx-background-radius: 40;" text="Sign in" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <PasswordField fx:id="txtPassword" alignment="CENTER" layoutX="220.0" layoutY="372.0" onKeyPressed="#txtPasswordOnKeyPressed" prefHeight="53.0" prefWidth="331.0" promptText="Enter Password" style="-fx-background-radius: 50; -fx-border-radius: 50;">
+         <font>
+            <Font name="Noto Sans Mono Regular" size="20.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="lblError2" alignment="CENTER" layoutX="221.0" layoutY="336.0" prefHeight="16.0" prefWidth="339.0" />
+      <Label fx:id="lblError1" alignment="CENTER" layoutX="221.0" layoutY="448.0" prefHeight="16.0" prefWidth="339.0" />
+   </children>
+</AnchorPane>

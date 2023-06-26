@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="702.0" prefWidth="962.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Jayasakuna.controller.StudentpageFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="704.0" layoutX="-1.0" layoutY="2.0" stroke="BLACK" strokeType="INSIDE" width="962.0" />
+      <ImageView fitHeight="702.0" fitWidth="962.0" layoutX="-3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imge/studentForm.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtId" layoutX="140.0" layoutY="143.0" onKeyPressed="#PressId" onKeyTyped="#studentkey" prefHeight="16.0" prefWidth="225.0" style="-fx-background-radius: 40; -fx-border-radius: 40;" />
+      <TextField fx:id="txtName" layoutX="478.0" layoutY="143.0" prefHeight="24.0" prefWidth="213.0" style="-fx-background-radius: 40; -fx-border-radius: 40;" />
+      <TextField fx:id="txtMobileNo" layoutX="489.0" layoutY="232.0" onKeyTyped="#mobilekey" prefHeight="24.0" prefWidth="225.0" style="-fx-background-radius: 40; -fx-border-radius: 40;" />
+      <TextField fx:id="txtAddress" layoutX="137.0" layoutY="227.0" prefHeight="24.0" prefWidth="225.0" style="-fx-background-radius: 40; -fx-border-radius: 40;" />
+      <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="810.0" layoutY="361.0" onAction="#PressClear" prefHeight="40.0" prefWidth="69.0" style="-fx-background-color: #48CAE4; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: black;" text="clear" textFill="WHITE" />
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="715.0" layoutY="361.0" onAction="#pressDelete" prefHeight="40.0" prefWidth="69.0" style="-fx-background-color: #0077B6; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: black;" text="Delete" textFill="WHITE" />
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="617.0" layoutY="360.0" onAction="#pressUpdate" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: #48CAE4; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: black;" text="Update" textFill="WHITE" />
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="521.0" layoutY="360.0" onAction="#pressSave" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: #0077B6; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: black;" text="Save" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <Label layoutX="172.0" layoutY="113.0" text="Student Id" textFill="#110000">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="499.0" layoutY="111.0" text="Student name" textFill="#140000">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="507.0" layoutY="198.0" text="Mobile No :" textFill="#0a0000">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="189.0" prefHeight="30.0" prefWidth="176.0" text="Student Address" textFill="#110000">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="StudentTable" layoutX="103.0" layoutY="426.0" prefHeight="227.0" prefWidth="776.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="177.66665649414062" text="Student Id" />
+          <TableColumn fx:id="colname" prefWidth="198.33334350585938" text="Student name" />
+            <TableColumn fx:id="coladdress" prefWidth="187.0" text="Student Address" />
+            <TableColumn fx:id="colmobile" prefWidth="211.0" text="PhoneNumber" />
+        </columns>
+      </TableView>
+      <Label layoutX="273.0" layoutY="24.0" prefHeight="59.0" prefWidth="490.0" text="Student Management">
+         <font>
+            <Font name="System Bold Italic" size="39.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="chekMaths" checkedColor="#000704" layoutX="160.0" layoutY="308.0" onAction="#mathsPress" text="Maths" />
+      <JFXCheckBox fx:id="chekEnglish" checkedColor="#0a0a0a" layoutX="160.0" layoutY="338.0" onAction="#englishPress" text="English" />
+      <JFXCheckBox fx:id="chekICT" checkedColor="#0a0a0a" layoutX="160.0" layoutY="368.0" onAction="#ictPress" text="ICT" />
+      <Label layoutX="154.0" layoutY="272.0" text="Select Subjects" textFill="#0a0a0a">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

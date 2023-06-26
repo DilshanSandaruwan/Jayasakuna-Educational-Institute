@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="702.0" prefWidth="1365.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Jayasakuna.controller.LoadFormController">
+   <children>
+      <ImageView fitHeight="702.0" fitWidth="1365.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imge/load.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTxt1" alignment="CENTER" layoutX="158.0" layoutY="94.0" prefHeight="38.0" prefWidth="422.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTxt2" alignment="CENTER" layoutX="168.0" layoutY="474.0" prefHeight="38.0" prefWidth="422.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="109.0" fitWidth="362.0" layoutX="201.0" layoutY="274.0">
+         <image>
+            <Image url="@../imge/loading-gif.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

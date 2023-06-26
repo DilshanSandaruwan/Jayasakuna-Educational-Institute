@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="702.0" prefWidth="962.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Jayasakuna.controller.SubjectPageFormController">
+   <children>
+      <ImageView fitHeight="702.0" fitWidth="962.0" layoutX="-3.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imge/Subject.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtId" layoutX="90.0" layoutY="175.0" onKeyPressed="#PressId" prefHeight="40.0" prefWidth="212.0" style="-fx-background-radius: 40; -fx-border-radius: 40;" />
+      <TextField fx:id="txtTime" layoutX="90.0" layoutY="285.0" prefHeight="40.0" prefWidth="212.0" style="-fx-background-radius: 40; -fx-border-radius: 40;" />
+      <TextField fx:id="txtHallnumber" layoutX="550.0" layoutY="285.0" prefHeight="40.0" prefWidth="212.0" style="-fx-background-radius: 40; -fx-border-radius: 40;" />
+      <TextField fx:id="txtName" layoutX="550.0" layoutY="175.0" prefHeight="40.0" prefWidth="212.0" style="-fx-background-radius: 40; -fx-border-radius: 40;" />
+      <Label layoutX="130.0" layoutY="146.0" prefHeight="26.0" prefWidth="131.0" text="Subject ID " textFill="#0d0000">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="580.0" layoutY="146.0" prefHeight="26.0" prefWidth="159.0" text="Subject Name " textFill="#110000">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="580.0" layoutY="256.0" prefHeight="26.0" prefWidth="159.0" text="Hall Number" textFill="#110101">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="256.0" prefHeight="26.0" prefWidth="159.0" text="Subject Time" textFill="#070000">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="691.0" layoutY="387.0" onAction="#PressClear" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: #48CAE4; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: black;" text="Clear" textFill="WHITE" />
+      <JFXButton fx:id="btnUpdate" layoutX="784.0" layoutY="387.0" onAction="#PressUpdate" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: #48CAE4; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: black;" text="Update" textFill="WHITE" />
+      <TableView fx:id="tblSubject" layoutX="110.0" layoutY="463.0" prefHeight="200.0" prefWidth="761.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="196.3333282470703" text="Subject ID" />
+          <TableColumn fx:id="colname" prefWidth="203.6666717529297" text="Subject Name" />
+            <TableColumn fx:id="coltime" prefWidth="173.66665649414062" text="Subject Time" />
+            <TableColumn fx:id="colhallNo" prefWidth="185.00003051757812" text="Hall Number" />
+        </columns>
+      </TableView>
+      <Label layoutX="250.0" layoutY="34.0" prefHeight="59.0" prefWidth="433.0" text="Subject Management">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
